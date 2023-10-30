@@ -1,5 +1,6 @@
 import React from 'react';
 import User from "../User/User";
+import '../User/User.css'
 
 let users = [
     {
@@ -53,11 +54,11 @@ let users = [
 ]
 
 const Users = () => {
-    return (
-        <div>
-            {users.map(user=> <User key={user.id} user={user}/>)}
-        </div>
-    );
+  return (
+    <div className="container">
+        {users.map(user=> <User key={user.id} user={user}/>)}
+    </div>
+  );
 };
 
 export default Users;
