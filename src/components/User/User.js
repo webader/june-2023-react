@@ -5,8 +5,6 @@ const User = ({user}) => {
     return (
 
         <div className="user">
-
-            <hr/>
             <p>Name - {name}</p>
             <p>Status - {status}</p>
             <p>Species - {species}</p>
@@ -14,7 +12,6 @@ const User = ({user}) => {
             <p>Photo person</p>
             <img src={image} alt={name}/>
             <hr/>
-
         </div>
 
 
